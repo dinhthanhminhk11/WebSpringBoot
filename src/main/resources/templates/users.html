@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+
+<div class="container-fluid text-center">
+    <div><h2>Manager User</h2></div>
+    <div>
+        <table class="table table-header">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>E-mail</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="user : ${listUser}">
+                <tr>
+                    <td>[[${user.id}]]</td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
